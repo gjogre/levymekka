@@ -1,2 +1,21 @@
 <h1>Pages#levylistaus</h1>
 <p>Find me in app/views/pages/levylistaus.html.erb</p>
+
+<script>
+	/*
+	 * usage: ajaxXMLReguest("file.xml", function(response) { do something here })
+	 */
+	function ajaxXMLReguest(target, callback) {
+		if (window.XMLHttpRequest) {
+  			xmlhttp=new XMLHttpRequest();
+  		}
+		
+		else {
+  			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  		}
+  		
+		xmlhttp.open("GET","target",false);
+		xmlhttp.send();
+		callback(xmlhttp.responseXML);
+	}
+</script>
