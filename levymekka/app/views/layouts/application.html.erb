@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Levymekka</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<article>
+
+	<header>
+		<%= render "layouts/header"%>
+	<header>
+
+	<div id="Content">
+		<%= yield %>
+	</div>
+
+</article>
+
+</body>
+</html>
