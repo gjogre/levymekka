@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<artists>
+	<artist name="The Foobars">
+		<albums>
+			<album name="Binary domain" />
+			<album name="Summer of code" />
+			<album name="Legend of two" />
+		</albums>
+	</artist>
+</artists>
