@@ -1,9 +1,12 @@
 <h1>Pages#levylistaus</h1>
 <p>Find me in app/views/pages/levylistaus.html.erb</p>
 
+<div id="artist-list">
+</div>
+
 <script>
 	/*
-	 * usage: ajaxXMLReguest("file.xml", function(response) { do something here })
+	 * usage: ajaxXMLRequest("file.xml", function(response) { do something here })
 	 */
 	function ajaxXMLRequest(target, callback) {
 		if (window.XMLHttpRequest) {
@@ -14,12 +17,33 @@
   			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
   		}
   		
-		xmlhttp.open("GET","target",false);
+		xmlhttp.open("GET",target,false);
 		xmlhttp.send();
 		callback(xmlhttp.responseXML);
 	}
 	
-	ajaxXMLRequest("database.xml", function(response) {
-		console.log(response);
+	ajaxXMLRequest("/database.xml", function(response) {
+		var artistList = $('#artist-list');
+		
+		var artists = response.getElementsByTagName("artist");
+
+		
+		for(var artistIndex = 0; artistIndex < artists.length; artistIndex++) {
+			var artist = $("<div class='artists'></div>");
+			artist.append("<h2>"+ artists[artistIndex].attributes.name.nodeValue +"</h2>");
+			
+			var albums = artists[artistIndex].getElementsByTagName("albums")[0].children;
+			
+			var albumList = $("<div class='album-list'></div>");
+			
+			for(var albumIndex = 0; albumIndex < albums.length; albumIndex++) {
+				var album = $("<div class='album'></div>");
+				album.append(albums[albumIndex].attributes.name.nodeValue);
+				albumList.append(album);
+			}
+			
+			artist.append(albumList);	
+			artistList.append(artist);
+		}
 	});
 </script>
