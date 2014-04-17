@@ -1,13 +1,11 @@
 class PagesController < ApplicationController
   def uutiset
-  	render
+  	execute_javascript "document.write('SADASDSADASDSAD');"
   end
 
   def levylistaus
-  	render
   end
 
   def yhteystiedot
-  	render
   end
 end

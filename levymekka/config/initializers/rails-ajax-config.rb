@@ -27,6 +27,6 @@ RailsAjax.configure do
   # When changing this switch, you have to:
   # * Precompile your assets in production mode
   # * Restart your server
-  debug_alerts false
+  debug_alerts true
 
 end

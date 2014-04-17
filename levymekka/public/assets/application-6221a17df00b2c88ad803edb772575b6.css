@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+article
+{
+	text-align: center;
+
+}
+
+.button1 
+{
+	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #24BAD5), color-stop(1, #FFFFFF) );
+	background:-moz-linear-gradient( center top, #024cad 5%, #7892b3 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#024cad', endColorstr='#7892b3');
+	background-color:#024cad;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:0px solid #707070;
+	display:inline-block;
+	color:#d52145;
+	font-family:Arial Black;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:65px;
+	line-height:65px;
+	width:131px;
+	text-decoration:none;
+	text-shadow:2px 2px 1px #3e383a;
+}
+.button1:hover 
+{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #24BAD5), color-stop(1, #24BAD5) );
+	background:-moz-linear-gradient( center top, #7892b3 5%, #024cad 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892b3', endColorstr='#024cad');
+	background-color:#7892b3;
+}
+.button1:active 
+{
+	position:relative;
+	top:1px;
+}
