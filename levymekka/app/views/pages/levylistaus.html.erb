@@ -1,5 +1,5 @@
-<h1>Pages#levylistaus</h1>
-<p>Find me in app/views/pages/levylistaus.html.erb</p>
+<h1>Levyt (LP)</h1>
+<p>Kysy lisää levymekka@gmail.com</p>
 
 <div id="artist-list">
 </div>
@@ -30,7 +30,7 @@
 		
 		for(var artistIndex = 0; artistIndex < artists.length; artistIndex++) {
 			var artist = $("<div class='artists'></div>");
-			artist.append("<h2>"+ artists[artistIndex].attributes.name.nodeValue +"</h2>");
+			artist.append("<h3>"+ artists[artistIndex].attributes.name.nodeValue +"</h3>");
 			
 			var albums = artists[artistIndex].getElementsByTagName("albums")[0].children;
 			

@@ -1,5 +1,13 @@
 <?xml version="1.0" ?>
 <artists>
+
+	<artist name="Neil Young">
+		<albums>
+			<album name="After the gold rush" />
+			<album name="On the beach" />
+		</albums>
+	</artist>
+
 	<artist name="The Foobars">
 		<albums>
 			<album name="Binary domain" />
@@ -7,4 +15,5 @@
 			<album name="Legend of two" />
 		</albums>
 	</artist>
+
 </artists>
