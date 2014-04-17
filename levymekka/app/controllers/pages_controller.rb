@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def uutiset
-  	execute_javascript "document.write('SADASDSADASDSAD');"
+  	execute_javascript "console.log('SADASDSADASDSAD');"
   end
 
   def levylistaus
